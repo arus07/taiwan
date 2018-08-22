@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>台语四六级考试</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+
+    <link type="text/css" href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/WeixinApi.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+  
+      <div class="container">
+          
+        <div id="vbvb">
+            
+            <div class="row">
+          
+            <img src="images/sun.png" class="img-responsive"/> 
+                
+            </div>
+
+            <div class="row">
+
+                <P class="resu" id="text1"></P>
+
+            </div>
+            
+            <div class="row tC">
+             
+                <span class="xy1">炫耀一下！</span>    
+            
+            </div>
+            
+            <div class="row tC fei4">
+             
+                <a href="http://www.chashanyou.com/" class="xy2">放松一下，体验闽南慢生活</a>    
+            
+            </div>
+            
+        </div>
+          
+        <div id="vbvb1">
+          
+          
+            <div class="row">
+
+               <div class="orangetiao"><span class="orangetit">史上最难台语考试</span><span class="bell"></span><span id="cv">10</span><span class="num"><span id="hk">1</span>/10</span></div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="question" id="question"></div>
+
+            </div>
+
+            <div class="row">
+
+               <div class="ans" id="answer1"></div>
+               <div class="ans" id="answer2"></div>
+               <div class="ans" id="answer3"></div>
+               <div class="ans" id="answer4"></div>
+
+            </div>
+            
+        </div>
+          
+          
+        <div class="row">
+            
+            <img src="images/bg1.jpg" class="img-responsive"/>
+
+        </div>
+          
+        <div class="dark"></div>
+          
+        <div class="modal1">猛戳右上方菜单选择“分享到朋友圈”</div>
+          
+        <div class="modal2"></div>
+          
+        <div class="adv">
+        
+            <span class="logo"></span>
+            
+            <span class="ltxt">清源茗山茶村丨<em>5A级农家乐</em></span>
+          
+        </div>
+          
+        <a href="http://www.chashanyou.com/" class="adv1"></a>
+          
+        <div class="di"></div>
+
+      </div>
+      
+   
+<script type="text/javascript">
+    
+
+    
+// 所有功能必须包含在 WeixinApi.ready 中进行
+WeixinApi.ready(function(Api){
+ 
+    // 微信分享的数据
+    var wxData = {
+        "imgUrl" : 'http://wwwdemo.limayao.com/taiwan/images/flag.jpg',
+        "link" : 'http://baby.limayao.com/test/taiwan',
+        "desc":'史上最难台语考试，敢不敢来挑战高分',
+        "title":"台语四六级考试"
+        
+    };
+    
+/*超难台语四六级考试,自由行前必看哦*/
+
+    // 分享的回调
+    var wxCallbacks = {
+        // 分享操作开始之前
+        ready:function () {
+            // 你可以在这里对分享的数据进行重组
+                if(document.getElementById("text1").innerHTML !== ""){
+                wxData.desc = document.getElementById("text1").innerHTML + "(台语四六级考试)";
+
+                }
+            
+            
+        },
+        // 分享被用户自动取消
+        cancel:function (resp) {
+            // 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
+        },
+        // 分享失败了
+        fail:function (resp) {
+            // 分享失败了，是不是可以告诉用户：不要紧，可能是网络问题，一会儿再试试？
+        },
+        // 分享成功
+        confirm:function (resp) {
+            // 分享成功了，我们是不是可以做一些分享统计呢？
+        },
+        // 整个分享过程结束
+        all:function (resp) {
+            // 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
+        }
+    };
+ 
+    // 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
+    Api.shareToFriend(wxData, wxCallbacks);
+ 
+    // 点击分享到朋友圈，会执行下面这个代码
+    Api.shareToTimeline(wxData, wxCallbacks);
+ 
+    // 点击分享到腾讯微博，会执行下面这个代码
+    Api.shareToWeibo(wxData, wxCallbacks);
+});
+</script>
+      
+      
+         
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--    <script src="js/bootstrap.min.js"></script>-->
+        <script src="js/bb.js"></script>
+
+<!-- 百度统计 -->
+<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F75e80c2b6b6a61993881345a31831197' type='text/javascript'%3E%3C/script%3E"));
+</script>
+      
+
+  </body>
+
+
+
+
+
+</html>
