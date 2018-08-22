@@ -1,0 +1,456 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0px; padding:0px;}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.w100{width:100%;}
+
+.bw{background-color:#fff;}
+
+.pR{position:relative;}
+
+.tC{text-align:center;}
+
+    .fei1{
+        padding-top:16rem;
+    
+    }
+
+    .fei2{
+        padding-top:9rem;
+    
+    }
+
+    .fei3{
+        padding-top:5rem;
+    
+    }
+
+    .fei4{
+        padding-top:2.55rem;
+    
+    }
+
+
+.pbd{
+    padding-bottom:60rem;
+
+}
+
+.orangetiao{
+    background-color:#ff8041;
+    color:#fff;
+    font-family:"微软雅黑";
+    padding:0 1rem;
+    position:relative;
+    height:8rem;
+}
+
+.orangetit{
+    display:block;
+    float:left;
+    font-size:5rem;
+    line-height:8rem;  
+}
+
+.num{
+    font-family:"微软雅黑";
+    display:inline-block;
+    position:absolute;
+    font-size:3rem;
+    right:2rem;
+    top:3rem;
+}
+
+.question{
+    color:#221f1d;
+    font-family:"微软雅黑";
+    font-size:2.5rem;
+    margin-top:2rem;
+    padding:0 2rem;
+}
+
+.resu{
+    color:#ffb515;
+    font-family:"微软雅黑";
+    font-size:3.5rem;
+    padding:0 2rem;
+    text-align:center;
+}
+
+
+.ans{
+    color:#221f1d;
+    font-family:"微软雅黑";
+    font-size:2.5rem;
+    margin:3rem 1.5rem;
+    padding:1rem;
+    border:3px solid #ff8041;
+    border-radius:1rem;
+    text-align:center;
+    cursor:pointer;
+    -webkit-transition: .333s ease -webkit-transform;
+    transition: .333s ease transform; 
+}
+
+.ans:active {
+    -webkit-transform: scale(.905);
+    transform: scale(.905);
+    background-color:#ff8041;
+    color:#fff;
+}
+
+.ans.act{
+    color:#fff;
+    background-color:#ff8041;
+}
+
+.ans span{
+    margin-right:1rem;
+
+
+}
+
+.bbg{
+    background:url(../images/bg.jpg) no-repeat;
+}
+
+#vbvb{
+    display:none;
+
+}
+
+#vbvb1{
+    display:block;
+
+}
+
+.xy1{
+    cursor:pointer;
+    display:inline-block;
+    color:#fff;
+    font-family:"微软雅黑";
+    background-color:#f8b551;
+    font-size:2.5rem;
+    border-radius:1rem;
+    padding:0.4rem 0.7rem;
+}
+
+.xy2{
+    cursor:pointer;
+    display:inline-block;
+    color:#fff;
+    font-family:"微软雅黑";
+    background-color:#f8b551;
+    font-size:2.5rem;
+    border-radius:1rem;
+    padding:0.3rem 0.6rem;
+}
+
+.xy2:visited
+{
+
+    text-decoration: none;
+    outline: none;
+}
+
+.dark{
+    z-index:4;
+    background-color:#000;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: .8;
+    -webkit-opacity: .8;
+    -moz-opacity: .8;
+    filter: alpha(opacity=80);
+    
+}
+
+.modal1{
+    color:#fff;
+    font-family:"微软雅黑";
+    font-size:3.5rem;   
+    z-index:5;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    padding-top:18rem;
+    display:none;
+}
+
+.modal2{
+    background:url(../images/dq.png) no-repeat;
+    width:165px;
+    height:134px;
+    z-index:5;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    display:none;
+}
+
+.modal1.active,.dark.active,.modal2.active{
+    display:block;
+
+
+}
+
+.adv{
+    position:fixed;
+    bottom:0px;
+    left:0;
+    height:55px;
+    width:100%;
+    z-index:2;
+}
+
+.ltxt{
+    font-family:"微软雅黑";
+    font-size:2rem;  
+    color:#000;
+    line-height:55px;
+    display:block;
+    float:left;
+    padding-left:3px;
+}
+
+
+
+.adv1{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:55px;
+    width:100%;
+    display:block;
+    z-index:3;
+}
+
+.di{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:55px;
+    width:100%;
+    opacity: .68;
+    -webkit-opacity: .68;
+    -moz-opacity: .68;
+    filter: alpha(opacity=68);
+    background-color:#fff;
+    z-index:1;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+    background:url(../images/logo1.jpg) no-repeat;
+    display:block;
+    float:left;
+}
+
+.bell{
+    background:url(../images/bell.png) no-repeat;
+    width:55px;
+    height:63px;
+    display:block;
+    float:left;
+    margin:1.4rem 0 0 1rem;
+
+}
+
+#cv{
+    font-family:"微软雅黑";
+    font-size:4rem;  
+    padding-left:1rem;
+    line-height:8rem;
+    float:left;
+}
+
+@media only screen and (max-width: 480px) {
+    
+#hk{
+    font-size:2.2rem;
+
+}
+    
+.bell{
+
+    width:30px;
+    height:34px;
+    background-size:30px;
+    margin:0.6rem 0 0 1.5rem;
+
+}
+    
+.question{
+    font-size:2.1rem;
+    margin-top:1rem;
+}
+    
+.ans{
+
+    font-size:2rem;
+    margin:2rem 1rem;
+    padding:0.7rem;
+
+}
+    
+.xy1{
+
+    font-size:2.2rem;
+    border-radius:1rem;
+}
+    
+.xy2{
+
+    font-size:2.2rem;
+    border-radius:1rem;
+}
+    
+    .fei1{
+        padding-top:10rem;
+    
+    }
+    
+    .orangetit{
+
+        font-size:2.5rem;
+        line-height:4rem;
+
+    }
+    
+    .num{
+
+        font-size:2rem;
+        right:1rem;
+        top:0.6rem;
+    }
+    
+    .orangetiao{
+        height:4rem;
+
+    }
+
+    #cv{
+        font-size:2.2rem;  
+        padding-left:0.5rem;
+        line-height:4rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    
+
+ 
+    
+    
+}
+
+
+@media only screen and (max-width: 420px) {
+
+#cv{
+    font-size:2rem;  
+    padding-left:0.5rem;
+    line-height:3.5rem;
+
+}
+    
+.orangetiao{
+    height:3.5rem;
+
+}
+    
+.bell{
+
+    width:25px;
+    height:29px;
+    background-size:25px;
+    margin:0.6rem 0 0 1.5rem;
+
+}
+    
+.xy1{
+    font-size:1.7rem;
+    border-radius:0.8rem;
+
+
+}
+    
+.xy2{
+    font-size:1.7rem;
+    border-radius:0.8rem;
+
+
+}
+    
+.resu{
+
+    font-size:2.5rem;
+
+}
+    
+.num{
+
+    font-size:1.5rem;
+    right:1rem;
+    top:0.7rem;
+}
+    
+#hk{
+    font-size:2rem;
+
+}
+    
+.orangetit{
+
+    font-size:2.2rem;
+    line-height:3.5rem;
+    
+}
+
+.question{
+    font-size:2.1rem;
+    margin-top:1rem;
+}
+    
+.ans{
+    font-size:1.6rem;
+    margin:1.5rem 1rem;
+    padding:0.5rem;
+}
+    
+.modal1{
+    font-size:2.5rem;
+
+
+}
+    
+
+    
+   
+ }       
+@media only screen and (max-width: 320px) {
+
+
+    
+    
+    
+}
+
+
+
+
